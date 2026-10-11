@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shahadat Hossen Shakil | Software Engineer</title>
+  <meta name="description" content="Portfolio of Shahadat Hossen Shakil, software engineer. Projects pulled live from GitHub.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Shakil</a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" type="button" aria-label="Toggle colour theme">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img id="avatar" class="avatar" src="https://github.com/shakil1990.png" alt="Portrait of Shahadat Hossen Shakil" width="140" height="140">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1 id="name">Shahadat Hossen Shakil</h1>
+      <p class="lead">Software engineer building web applications and APIs with C#, .NET and JavaScript.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/shakil1990" rel="noopener">GitHub profile</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I enjoy turning ideas into working software, from REST APIs and databases to clean front ends. I also practise algorithms and data structures regularly, and keep my solutions public on GitHub.</p>
+      <ul class="stats" aria-label="GitHub statistics">
+        <li><strong id="stat-repos">–</strong><span>Public repos</span></li>
+        <li><strong id="stat-langs">–</strong><span>Languages</span></li>
+        <li><strong id="stat-since">–</strong><span>On GitHub since</span></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p class="muted">Detected from my repositories.</p>
+      <ul id="skill-list" class="chips"></ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" class="chip active" data-filter="all">All</button>
+        <button type="button" class="chip" data-filter="own">My work</button>
+        <button type="button" class="chip" data-filter="fork">Forks</button>
+      </div>
+      <p id="status" class="muted" role="status">Loading projects…</p>
+      <div id="project-grid" class="grid"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is through GitHub.</p>
+      <a class="btn primary" href="https://github.com/shakil1990" rel="noopener">github.com/shakil1990</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Shahadat Hossen Shakil</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
